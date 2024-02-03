@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="shortcut icon" href="/Black and White Elegant Photography Initials Logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/style1.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap"
+      rel="stylesheet">
+    <title>Pixel Perfect Background Remover</title>
+</head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Rubik+Mono+One&family=Russo+One&display=swap');
+        body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Courier New', Courier, monospace;
+  
+}
+
+        .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; 
+  padding: 2em 1em;
+  text-align: center;
+  margin-top: 50px;
+}
+@media screen and (min-width: 768px) {
+  .row {
+    justify-content: space-around; 
+  }
+}
+.column {
+  width: 100%;
+  padding: 0.5em 0;
+}
+h1 {
+  width: 100%;
+  text-align: center;
+  font-size: 3.5em;
+  color: #1f003b;
+}
+.card {
+ box-shadow: 2px 2px 2px 2px;
+  padding: 3.5em 1em;
+  border-radius: 0.6em;
+  color: #1f003b;
+  cursor: pointer;
+  transition: 0.3s;
+  background-color: #ffffff;
+
+}
+p{
+    color: orangered;
+   
+}
+
+.card .img-container {
+  width: 8em;
+  height: 8em;
+  background-color: orangered;
+  padding: 0.1em;
+  border-radius: 50%;
+  margin: 0 auto 2em auto;
+}
+.card img {
+  width: 100%;
+  border-radius: 50%;
+}
+.card h3 {
+  font-weight: 500;
+}
+.card p {
+  font-weight: 300;
+  text-transform: uppercase;
+  margin: 0.5em 0 2em 0;
+  letter-spacing: 2px;
+}
+.icons {
+  width: 50%;
+  min-width: 180px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.icons:hover{
+    color: orangered;
+}
+.card a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.4em;
+}
+.card:hover {
+  background-color: black;
+  color: #ffffff;
+  box-shadow: 2px 2px 2px 2px orangered;
+
+}
+.card:hover .img-container {
+  transform: scale(1.15);
+}
+@media screen and (min-width: 768px) {
+  section {
+    padding: 1em 7em;
+  }
+}
+@media screen and (min-width: 992px) {
+  section {
+    padding: 1em;
+  }
+  .card {
+    padding: 5em 1em;
+  }
+  .column {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    padding: 0 1em;
+  }
+}
+header, nav, footer {
+  width: 100%;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  
+}
+#imgs{
+  max-width: 120px;
+  margin-top: -25px;
+}
+
+nav {
+  background-color: whitesmoke;
+  height: 10vh;
+  box-shadow: 0px 0px 0px 1px grey;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+}
+
+nav li {
+  margin-left: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 13px;
+  margin-right: 20px;
+  margin-top: -25px;
+  position: relative;
+  bottom: 70px;
+  background-color: orangered;
+  padding: 10px 10px 10px 10px;
+  border-radius: 5px;
+
+}
+@media only screen and (max-width: 600px) {
+  nav a {
+    margin-left: auto; 
+    position: relative;
+    top: -140px;
+    left: 160px;
+    
+  }
+  p{
+    text-align: justify;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+  }
+  
+}
+
+footer {
+padding: 0;
+margin: 0;
+bottom: 0;
+  background-color: black;
+  color: grey;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: auto;
+  padding: 30px 30px 30px 30px;
+  
+
+}
+
+@media only screen and (min-width: 600px) {
+    footer {
+        margin-top: 100px; 
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    footer {
+        margin-top: 50px; 
+        position: static; 
+    }
+}
+@media only screen and (max-width: 600px) {
+    footer {
+        position: static;
+        margin-top: 0; 
+    }
+}
+@media only screen and (max-width: 600px) {
+  header {
+    font-size: 20px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav li {
+    margin: 10px 0;
+    margin-top: 50px;
+  }
+}
+
+
+    </style>
+<body>
+    <nav>
+         <img id="imgs" src="../Black_and_White_Elegant_Photography_Initials_Logo-removebg-preview.png" alt="" srcset="">
+         
+        <ul>        
+            <li><a style=" text-decoration: none;
+                color: white;
+                font-weight: bold;
+                font-size: 13px;
+                margin-right: 20px;
+                margin-top: -25px;
+                position: relative;
+                bottom: 90px;
+                background-color: orangered;
+                padding: 10px 10px 10px 10px;
+                border-radius: 5px;
+              "  href="#">ABOUT</a></li>
+        </ul>
+    </nav>
+    <div style="text-align: center;" class="main-container">
+        <h3 style="font-family: 'Russo One', sans-serif; font-size: 40px;">ABOUT</h3>
+        <hr style="background-color: black; color:black; height: 2px; margin-top: 20px; width: 30%;">
+        <p style="margin-top: 50px; color:black;">"Pixel Perfect Background Remover is a cutting-edge tool designed to effortlessly remove backgrounds from images,<br> ensuring precision and clarity in your visual content. Whether you're a designer, photographer, or content creator,<br> this intuitive solution enhances your creative workflow, allowing you to achieve flawless compositions with ease."</p>
+    </div>
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <div class="img-container">
+              <img src="/JP.jpg" />
+            </div>
+            <h3>John Paul Nieto</h3>
+            <p>Developer</p>
+            <div class="icons">
+             <a href="https://www.facebook.com/JohnPaulCajucomNieto">
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a href="https://github.com/JohnPaulCajucomNieto">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://discord.com/channels/@me">
+                <i class="fab fa-discord"></i>
+              </a>
+              <a href="https://mail.google.com/mail/u/1/#inbox">
+                <i class="fas fa-envelope"></i>
+              </a> 
+            </div>
+          </div>
+        </div>
+     
+        
+</body>
+
+</html>

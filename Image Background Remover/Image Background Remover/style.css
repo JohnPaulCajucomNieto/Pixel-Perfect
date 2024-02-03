@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Rubik+Mono+One&family=Russo+One&display=swap');
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+body {
+ background-color: white;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+
+.container {
+  max-width: 400px;
+}
+.container h1 {
+  color: #111;
+  font-size: 25px;
+  text-align: center;
+  text-transform: capitalize;
+  margin-top: 50px;
+  
+}
+
+
+.container .card {
+  max-width: 100%;
+  margin: auto;
+  margin-top: 30px;
+  background-color: whitesmoke;
+  box-shadow: 3px 3px 3px 3px;
+
+  padding: 20px 40px;
+  border-radius: 20px;
+  height: 350px;
+  display: flex;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+.container .card button {
+  border: none;
+  outline: none;
+  position: relative;
+  background-color: orangered;
+  padding: 10px 60px;
+  border-radius: 5px;
+  font-size: 13px;
+  color: white;
+  font-weight: 500;
+  transition: 0.3s;
+  box-shadow: 0px 5px 0px 0px #0c0c0c;
+  cursor: pointer;
+}
+.container .card button:active {
+  box-shadow: 0px 0px 0px 0px #216aae;
+  transform: translateY(5px);
+}
+.container .card button input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  opacity: 0;
+  cursor: pointer;
+}
+.container .card p {
+  color: #111;
+  font-size: 15px;
+  opacity: 0.8;
+  text-align: center;
+  margin-top: 20px;
+}
+.container #displayCard img {
+  max-height: 100%;
+  width: auto;
+  border-radius: 5px;
+  z-index: 1;
+}
+#startBtn {
+    font-size: 12px;
+}
+.container .image-cont {
+  border-radius: 5px;
+  padding: 10px;
+  max-height: 90%;
+  width: 100%;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.container #downloadCard .image-cont {
+  padding: 0px;
+  width: fit-content;
+  background-image: url("https://thumbs.dreamstime.com/b/transparent-designer-must-have-fake-background-39672616.jpg");
+  background-size: contain;
+}
+.container #downloadCard .image-after {
+  max-height: 100%;
+  width: auto;
+  border-radius: 5px;
+  z-index: 1;
+}
+.container #downloadCard .image-before {
+  max-width: 20%;
+  height: auto;
+  border-radius: 5px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 2;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+header, nav, footer {
+  width: 100%;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  
+}
+#imgs{
+  max-width: 120px;
+  margin-top: -25px;
+}
+
+nav {
+  background-color: whitesmoke;
+  height: 10vh;
+  box-shadow: 0px 0px 0px 1px grey;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+}
+
+nav li {
+  margin-left: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 13px;
+  margin-right: 20px;
+  margin-top: -25px;
+  position: relative;
+  bottom: 70px;
+  background-color: orangered;
+  padding: 10px 10px 10px 10px;
+  border-radius: 5px;
+
+}
+@media only screen and (max-width: 600px) {
+  nav a {
+    margin-left: auto; 
+    position: relative;
+    bottom: 125px;
+    left: 160px;
+  }
+}
+footer {
+  background-color: black;
+  color: grey;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: auto;
+  padding: 30px 30px 30px 30px;
+  
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+    font-size: 20px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav li {
+    margin: 10px 0;
+    margin-top: 50px;
+  }
+}
+

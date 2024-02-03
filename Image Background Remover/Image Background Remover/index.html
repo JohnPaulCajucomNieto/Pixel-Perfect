@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pixel Perfect Background Remover</title>
+    <link rel="shortcut icon" href="../Black and White Elegant Photography Initials Logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" />
+  
+</head>
+<body>
+
+    <nav>
+        <img id="imgs" src="../Black_and_White_Elegant_Photography_Initials_Logo-removebg-preview.png" alt="" srcset="">
+        <ul>        
+            <li><a  href="profile.html">ABOUT</a></li>
+        </ul>
+    </nav>
+  
+        <div class="container">
+            <h1 style="font-family: 'Russo One', sans-serif; font-size: 40px; ">Pixel Perfect</h1>
+            <hr style="background-color: black; color:black; height: 3px; margin-top: 20px;">
+
+            <div class="card" id="addCard">
+                <button>
+                    <input type="file" name="" id="fileInput" />
+                   UPLOAD IMAGE
+                </button>
+                <p>Choose an Image to Remove Background</p>
+            </div>
+            
+            <div class="card" id="displayCard">
+                <div class="image-cont">
+                    <img id="display-img" src="" alt="" />
+                </div>
+                <button id="startBtn">REMOVE BACKGROUND</button>
+            </div>
+            <div class="card" id="downloadCard">
+                <div class="image-cont">
+                    <img class="image-before" src="" alt="" />
+                    <img class="image-after" src="" alt="" />
+                </div>
+                <div style="display: flex; gap: 10px">
+                    <button style="padding: 10px 40px">
+                        <a id="downloadHref" download="transparentImage">DOWNLOAD</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p style="color: gray; font-family: 'Courier New', Courier, monospace;">&copy; 2023 Pixel Perfect Background Remover</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
